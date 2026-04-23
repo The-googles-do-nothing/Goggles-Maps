@@ -34,6 +34,9 @@
 		<Criteria id="always">
 			<AlwaysMet></AlwaysMet>
 		</Criteria>
+        <Criteria all="true" id="ged-ynamp-disabled">
+            <ModInUse inverse="1">ged-ynamp</ModInUse>
+        </Criteria>
 		<Criteria id="goggles-map-in-use">
 			<MapInUse>{goggles-maps}maps/continents-voronoi-goggles.js</MapInUse>
 		</Criteria>
@@ -81,6 +84,13 @@
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
+		<ActionGroup id="ged-ynamp-disabled" scope="game" criteria="ged-ynamp-disabled">
+			<Actions>
+				<MapGenScripts>
+					<Item>maps/ynamp-mapsize-patch.js</Item>
+				</MapGenScripts>
+			</Actions>
+		</ActionGroup>
 		<ActionGroup id="goggles-maps-always" scope="game" criteria="always">
 			<Actions>
 				<UpdateDatabase>
@@ -183,7 +193,7 @@
 				<UpdateDatabase>
 					<Item>config/config.xml</Item>
 					<Item>config/config-mp.xml</Item>
-					<Item>config/config-voronoi.xml</Item>
+					<!-- <Item>config/config-voronoi.xml</Item> -->
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
