@@ -37,15 +37,13 @@
         <Criteria all="true" id="ged-ynamp-disabled">
             <ModInUse inverse="1">ged-ynamp</ModInUse>
         </Criteria>
-		<Criteria id="goggles-map-in-use">
-			<MapInUse>{goggles-maps}maps/continents-voronoi-goggles.js</MapInUse>
-		</Criteria>
 		<Criteria id="MAPSIZE_128_66_JEC">
 			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
 				<Value>MAPSIZE_128_66_JEC</Value>
 			</ConfigurationValueMatches>
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
 		<Criteria id="MAPSIZE_128_80_JEC">
 			<ConfigurationValueMatches>
@@ -53,6 +51,7 @@
 				<ConfigurationId>SizeType</ConfigurationId>
 				<Value>MAPSIZE_128_80_JEC</Value>
 			</ConfigurationValueMatches>
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
 		<Criteria id="MAPSIZE_128_90_JEC">
 			<ConfigurationValueMatches>
@@ -60,6 +59,7 @@
 				<ConfigurationId>SizeType</ConfigurationId>
 				<Value>MAPSIZE_128_90_JEC</Value>
 			</ConfigurationValueMatches>
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
 		<Criteria id="MAPSIZE_128_100_JEC">
 			<ConfigurationValueMatches>
@@ -67,6 +67,7 @@
 				<ConfigurationId>SizeType</ConfigurationId>
 				<Value>MAPSIZE_128_100_JEC</Value>
 			</ConfigurationValueMatches>
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
 		<Criteria id="MAPSIZE_128_120_JEC">
 			<ConfigurationValueMatches>
@@ -74,6 +75,7 @@
 				<ConfigurationId>SizeType</ConfigurationId>
 				<Value>MAPSIZE_128_120_JEC</Value>
 			</ConfigurationValueMatches>
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
 		<Criteria id="MAPSIZE_128_150_JEC">
 			<ConfigurationValueMatches>
@@ -81,6 +83,7 @@
 				<ConfigurationId>SizeType</ConfigurationId>
 				<Value>MAPSIZE_128_150_JEC</Value>
 			</ConfigurationValueMatches>
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
