@@ -1,9 +1,0 @@
-remove quest origin 'narrative'
-
-look in 'base standard'
-
-NarrativeQuestManagerClass
-
-Narrative-quest-manager.js
-
-Attempt to remove quest tracked item '157' origin 'narrative' but it doesn't exist in tracker.

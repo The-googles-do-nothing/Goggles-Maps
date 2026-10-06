@@ -34,174 +34,29 @@
 		<Criteria id="always">
 			<AlwaysMet></AlwaysMet>
 		</Criteria>
-        <Criteria all="true" id="ged-ynamp-disabled">
-            <ModInUse inverse="1">ged-ynamp</ModInUse>
-        </Criteria>
-		<Criteria id="MAPSIZE_128_66_JEC">
-			<ConfigurationValueMatches>
-				<Group>Map</Group>
-				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_128_66_JEC</Value>
-			</ConfigurationValueMatches>
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-		</Criteria>
-		<Criteria id="MAPSIZE_128_80_JEC">
-			<ConfigurationValueMatches>
-				<Group>Map</Group>
-				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_128_80_JEC</Value>
-			</ConfigurationValueMatches>
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-		</Criteria>
-		<Criteria id="MAPSIZE_128_90_JEC">
-			<ConfigurationValueMatches>
-				<Group>Map</Group>
-				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_128_90_JEC</Value>
-			</ConfigurationValueMatches>
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-		</Criteria>
-		<Criteria id="MAPSIZE_128_100_JEC">
-			<ConfigurationValueMatches>
-				<Group>Map</Group>
-				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_128_100_JEC</Value>
-			</ConfigurationValueMatches>
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-		</Criteria>
-		<Criteria id="MAPSIZE_128_120_JEC">
-			<ConfigurationValueMatches>
-				<Group>Map</Group>
-				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_128_120_JEC</Value>
-			</ConfigurationValueMatches>
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-		</Criteria>
-		<Criteria id="MAPSIZE_128_150_JEC">
-			<ConfigurationValueMatches>
-				<Group>Map</Group>
-				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_128_150_JEC</Value>
-			</ConfigurationValueMatches>
-			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
-		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
-		<ActionGroup id="ged-ynamp-disabled" scope="game" criteria="ged-ynamp-disabled">
-			<Actions>
-				<MapGenScripts>
-					<Item>maps/ynamp-mapsize-patch.js</Item>
-				</MapGenScripts>
-			</Actions>
-		</ActionGroup>
 		<ActionGroup id="goggles-maps-always" scope="game" criteria="always">
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/maps.xml</Item>
-					<Item>data/maps-mp.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
-					<Item>text/en_us/MapTextMP.xml</Item>
 					<Item>text/en_us/ConfigText.xml</Item>
-					<Item>text/en_us/VictoryText.xml</Item>
-					<Item>text/en_us/ConstructibleText.xml</Item>
 				</UpdateText>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-map-in-use" scope="game" criteria="goggles-map-in-use">
-			<Actions>
-				<UpdateDatabase>
-					<LoadOrder>999</LoadOrder>
-					<Item>data/discovery-stories-1.xml</Item>
-					<Item>data/discovery-stories-gameeffects-1.xml</Item>
-					<Item>data/discovery-stories-2.xml</Item>
-					<Item>data/discovery-stories-gameeffects-2.xml</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_66_JEC">
-			<Actions>
-				<UpdateDatabase>
-					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-a.xml</Item>
-					<Item>data/legacy-path-gameeffects.xml</Item>
-					<Item>data/victories01.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_80_JEC">
-			<Actions>
-				<UpdateDatabase>
-					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-a.xml</Item>
-					<Item>data/legacy-path-gameeffects.xml</Item>
-					<Item>data/victories01.sql</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_90_JEC">
-			<Actions>
-				<UpdateDatabase>
-					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-a.xml</Item>
-					<Item>data/legacy-path-gameeffects.xml</Item>
-					<Item>data/victories02.sql</Item>
-					<Item>data/constructibles.xml</Item>
-					<Item>data/progression-trees-tech.xml</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_100_JEC">
-			<Actions>
-				<UpdateDatabase>
-					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-a.xml</Item>
-					<Item>data/legacy-path-gameeffects.xml</Item>
-					<Item>data/victories-antiquity-b.xml</Item>
-					<Item>data/victories03.sql</Item>
-					<Item>data/constructibles.xml</Item>
-					<Item>data/progression-trees-tech.xml</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_120_JEC">
-			<Actions>
-				<UpdateDatabase>
-					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-a.xml</Item>
-					<Item>data/legacy-path-gameeffects.xml</Item>
-					<Item>data/victories-antiquity-b.xml</Item>
-					<Item>data/victories04.sql</Item>
-					<Item>data/constructibles.xml</Item>
-					<Item>data/progression-trees-tech.xml</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_150_JEC">
-			<Actions>
-				<UpdateDatabase>
-					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-a.xml</Item>
-					<Item>data/legacy-path-gameeffects.xml</Item>
-					<Item>data/victories-antiquity-b.xml</Item>
-					<Item>data/victories05.sql</Item>
-					<Item>data/constructibles.xml</Item>
-					<Item>data/progression-trees-tech.xml</Item>
-				</UpdateDatabase>
-			</Actions>
-		</ActionGroup>
+		
 		<ActionGroup id="shell-goggles-maps" scope="shell" criteria="always">
 			<Actions>
 				<UpdateDatabase>
 					<Item>config/config.xml</Item>
-					<Item>config/config-mp.xml</Item>
 					<!-- <Item>config/config-voronoi.xml</Item> -->
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
-					<Item>text/en_us/MapTextMP.xml</Item>
-					<Item>text/en_us/ConfigText.xml</Item>
+					<Item>text/en_us/ModuleText.xml</Item>
 				</UpdateText>
 				<ImportFiles>
 				</ImportFiles>
