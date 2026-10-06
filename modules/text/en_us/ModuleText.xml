@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<EnglishText>
-		<Row Tag="LOC_MODULE_GOGGLES_MAPS_NAME">
+		<InsertOrIgnore Tag="LOC_MODULE_GOGGLES_MAPS_NAME">
 			<Text>Goggle's Maps</Text>
-		</Row>
-		<Row Tag="LOC_MODULE_MAPS_DESCRIPTION">
+		</InsertOrIgnore>
+		<InsertOrIgnore Tag="LOC_MODULE_MAPS_DESCRIPTION">
 			<Text>Goggle's Map</Text>
-		</Row>
+		</InsertOrIgnore>
 		<InsertOrIgnore Tag="LOC_AUTHORS_JEC">
 			<Text>The_Goggles_Do_Nothing</Text>
 		</InsertOrIgnore>
